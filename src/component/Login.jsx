@@ -70,7 +70,7 @@ const Login = () => {
       }
     } catch (error) {
       console.log(error);
-      toast({ title: error.response.data.message });
+      toast({ title: "Something went wrong", variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -81,9 +81,8 @@ const Login = () => {
   return (
     <>
       <div
-        className={`absolute top-0 h-[100vh] w-full transition-all duration-100 ${
-          toggle ? "block" : "hidden"
-        } backdrop-blur-sm bg-black/30`}
+        className={`absolute top-0 h-[100vh] w-full transition-all duration-100 ${toggle ? "block" : "hidden"
+          } backdrop-blur-sm bg-black/30`}
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <form
