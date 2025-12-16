@@ -98,5 +98,5 @@ export const pricingInfo = [
     },
 ]
 
-export const BASE_URL = "https://imagify-bd.vercel.app/"
+export const BASE_URL = "https://imagify-bd.vercel.app"
 // export const BASE_URL = "http://localhost:4040"
