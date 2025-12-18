@@ -96,15 +96,15 @@ const Login = () => {
               />
               <img className="w-[100px] mx-auto" src={appLogo} alt="" />
               <div className="text-center my-5">
-                <h1>Welcome to Imagify</h1>
-                <p>Download AI-Generated Images using Text</p>
+                <h1 className="text-black">Welcome to Imagify</h1>
+                <p className="text-black">Download AI-Generated Images using Text</p>
               </div>
             </div>
             {isSignUp && (
               <div className="my-5">
-                <label className="block font-semibold">Name</label>
+                <label className="block font-semibold text-black">Name</label>
                 <input
-                  className="mt-2 w-full px-2 py-2 rounded-lg outline-none"
+                  className="mt-2 w-full px-2 py-2 rounded-lg outline-none text-white"
                   type="text"
                   placeholder="Name"
                   name="name"
@@ -114,9 +114,9 @@ const Login = () => {
               </div>
             )}
             <div>
-              <label className="block font-semibold">Email</label>
+              <label className="block font-semibold text-black">Email</label>
               <input
-                className="mt-2 w-full px-2 py-2 rounded-lg outline-none"
+                className="mt-2 w-full px-2 py-2 rounded-lg outline-none text-white"
                 type="email"
                 placeholder="Email"
                 name="email"
@@ -125,9 +125,9 @@ const Login = () => {
               />
             </div>
             <div className="my-5">
-              <label className="block font-semibold">Password</label>
+              <label className="block font-semibold text-black">Password</label>
               <input
-                className="mt-2 w-full px-2 py-2 rounded-lg outline-none"
+                className="mt-2 w-full px-2 py-2 rounded-lg outline-none text-white"
                 type="password"
                 placeholder="Password"
                 name="password"
@@ -137,7 +137,7 @@ const Login = () => {
             </div>
             {!isSignUp && (
               <Link to={"/forgot-password"} target="__blank">
-                <p className="text-right mt-2 font-bold hover:underline">
+                <p className="text-right text-black mt-2 font-bold hover:underline">
                   Forgot Password?
                 </p>
               </Link>
@@ -150,21 +150,21 @@ const Login = () => {
               </button>
             )}
             {isSignUp ? (
-              <p className="mt-2 text-center">
+              <p className="mt-2 text-center text-black">
                 Have an Account?{" "}
                 <span
                   onClick={() => setIsSignUp(false)}
-                  className="hover:underline cursor-pointer"
+                  className="hover:underline cursor-pointer text-black"
                 >
                   Login
                 </span>
               </p>
             ) : (
-              <p className="mt-2 text-center">
+              <p className="mt-2 text-center text-black">
                 Not a Member?{" "}
                 <span
                   onClick={() => setIsSignUp(true)}
-                  className="hover:underline cursor-pointer"
+                  className="hover:underline cursor-pointer text-black"
                 >
                   Register
                 </span>
